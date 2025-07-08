@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object exercise</title>
+</head>
+<body>
+    <script>
+   const car={
+    brand:'toyato',
+    model:'camry',
+    year:2020
+   }
+   console.log(car.year)
+//change a property,change year of car object to 2022
+car.year = 2022
+console.log(car.year)
+console.log(car)
+//add a new property called colour with the value black.
+car.colour='black',
+console.log(car.colour)
+console.log(car)
+//delete colour property
+delete car.colour;
+console.log(car)
+//quiz score tracker
+const quizscore={
+    correct:0,
+    wrong:0,
+    skipped:0
+}
+function markcorrect(){
+    quizscore.correct++
+    displayscore()
+}
+function markwrong(){
+    quizscore.wrong++
+    displayscore()
+}
+function markskipped(){
+    quizscore.skipped++
+    displayscore()
+}
+function displayscore(){
+    console.log(`correct:${quizscore.correct},wrong:${quizscore.wrong},skippwd:${quizscore.skipped}`)
+}
+    </script>
+</body>
+</html>
