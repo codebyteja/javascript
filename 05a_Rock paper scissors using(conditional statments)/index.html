@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+<body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <button onclick="
+let randomNumber= Math.random();
+   let  computerguess=''
+    if(randomNumber >= 0 && randomNumber < 1/3){
+      computerguess='rock'
+    }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+         computerguess='paper'
+    }else if(randomNumber >= 2/3 && randomNumber < 1){
+     computerguess='scissors'
+    }
+    console.log(computerguess)
+  let result=''
+if(computerguess === 'rock'){
+   result='tie'
+}else if (computerguess === 'paper'){
+   result='you loose'
+}else if(computerguess === 'scissors'){
+  result='you win'
+}
+alert(`you choosen rock, computer choosen ${computerguess}, ${result}`)
+ ">Rock</button>
+    <button onclick="
+    let randomNumber1= Math.random();
+   let  computerguess1=''
+    if(randomNumber1 >=0 && randomNumber1 < 1/3){
+      computerguess1='rock'
+    }else if(randomNumber1 >= 1/3 && randomNumber1 < 2/3){
+         computerguess1='paper'
+    }else if(randomNumber1 >= 2/3 && randomNumber1 < 1){
+     computerguess1='scissors'
+    }
+    console.log(computerguess1)
+  result=''
+if(computerguess1 === 'rock'){
+   result='you win'
+}else if (computerguess1 === 'paper'){
+   result='tie'
+}else if(computerguess1 === 'scissors'){
+  result='you loose'
+}
+alert(`you choosen paper, computer choosen ${computerguess1}, ${result}`)
+    ">paper</button>
+    <button onclick="
+      let randomNumber2= Math.random();
+   let  computerguess2=''
+    if(randomNumber2 >=0 && randomNumber2 < 1/3){
+      computerguess2='rock'
+    }else if(randomNumber2 >= 1/3 && randomNumber2 < 2/3){
+         computerguess2='paper'
+    }else if(randomNumber2 >= 2/3 && randomNumber2 < 1){
+     computerguess2='scissors'
+    }
+    console.log(computerguess2)
+  result=''
+if(computerguess2 === 'rock'){
+   result='you loose'
+}else if (computerguess2 === 'paper'){
+   result='you win'
+}else if(computerguess2 === 'scissors'){
+  result='tie'
+}
+alert(`you choosen scissors, computer choosen ${computerguess2}, ${result}`)
+    ">Scissors</button>
+    
+</body>
+</html>
