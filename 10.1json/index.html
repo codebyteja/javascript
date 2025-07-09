@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+const product={    //OBJECT    
+    name : 'teja',
+    price :500,
+    rating :{
+        stars :4.5
+    },
+    fun(){
+        console.log('functio inside object')
+    }
+}
+//JAVASCRIPT YO json OBJECT
+console.log(JSON.stringify(product))
+console.log(typeof JSON.stringify(product))
+//json TO JAVA SCRIPT
+const jsonstring = JSON.stringify(product)
+console.log(JSON.parse(jsonstring))
+    </script>
+    
+</body>
+</html>

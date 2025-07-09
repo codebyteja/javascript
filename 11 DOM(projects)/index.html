@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PROJECTS</title>
+</head>
+<body>
+    <P1>YOU TUBE CHANNEL</P1><br>
+    <button onclick="
+   subscribe()
+    "class = "js-btn">subscribe</button>
+    <script>
+        function subscribe(){
+const element=document.querySelector('.js-btn')
+   if(element.innerText === 'subscribe'){
+   element.innerHTML = 'subscribed'
+   }else{
+    element.innerHTML='subscribe'
+   }
+    
+        }
+    </script>
+</body>
+</html>
