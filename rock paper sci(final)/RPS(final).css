@@ -1,0 +1,41 @@
+.body{
+            background-color:rgb(25, 25, 25);
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .moveimg{
+            width: 30px;
+
+        }
+       
+     
+        .btn{
+            background-color: transparent;
+           border: 2px solid white;
+           border-radius: 50%;
+           width:50px ;
+           height: 50px;
+           margin-right: 10px;
+        } 
+        .result{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .js-result{
+            font-size: 19px;
+        }
+        .moves{
+            font-size: 19px;
+        }
+        .score{
+            font-size: 24px;
+        }
+ .reset-btn{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+   border: 2px black;
+    color: rgb(10, 7, 7);
+   
+ }
