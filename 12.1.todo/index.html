@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>TODO</title>
+</head>
+<body>
+    <p2>Todo List</p2><br>
+    <input placeholder="Todo Name" class="js-input">
+    <button onclick="todoarray()" class="js-btn">Add</button>
+    <script>
+             let myarray=[]
+        function todoarray(){
+       
+             const inputElement = document.querySelector('.js-input');
+       
+        let innerValues = inputElement.value;
+        
+              myarray.push(innerValues)
+                console.log(myarray)
+
+                 inputElement.value="";
+
+        }
+      
+
+
+
+
+    </script>
+</body>
+</html>
