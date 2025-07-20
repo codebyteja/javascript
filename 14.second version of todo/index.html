@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>TODO</title>
+</head>
+<body>
+    <p2>Todo List</p2><br>
+    <input placeholder="Todo Name" class="js-input">
+    <button onclick="todoarray()" class="js-btn">Add</button>
+   <div class="js-display"></div>
+    <script>
+         
+             const myarray = ["",""]
+            function display(){
+                 let todoelement = ""
+               for(let i=0;i < myarray.length; i++){
+                const item = myarray[i];
+                const html = `<p>${item}</p>`
+             todoelement = todoelement + html
+               
+             }
+             console.log(todoelement)
+     
+             document.querySelector(".js-display").innerHTML = todoelement
+            }
+
+
+
+        function todoarray(){
+       
+             const inputElement = document.querySelector('.js-input');
+       
+        let innerValues = inputElement.value;
+        
+              myarray.push(innerValues)
+                console.log(myarray)
+              display();
+                 inputElement.value="";
+
+        }
+      
+
+
+
+
+    </script>
+</body>
+</html>
